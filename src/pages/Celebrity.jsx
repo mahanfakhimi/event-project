@@ -21,7 +21,7 @@ const Peat = () => {
           transition={{ delay: 0.5 }}
         >
           <Link to="/" className="z-10">
-            <button className="bg-yellow-600 px-10 text-white py-3 transition-all rounded-full hover:opacity-50 hover:scale-95">
+            <button className="bg-yellow-300 px-10 py-3 transition-all rounded-full hover:opacity-50 hover:scale-95">
               بازگشت
             </button>
           </Link>

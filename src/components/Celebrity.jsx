@@ -52,7 +52,7 @@ const Celebrity = (props) => {
             whileInView={{ opacity: 1, y: 0 }}
             className="w-full"
           >
-            <button className="bg-yellow-600 w-full text-white py-3 transition-all rounded-full mt-4 hover:opacity-50 hover:scale-95">
+            <button className="bg-yellow-300 w-full py-3 transition-all rounded-full mt-4 hover:opacity-50 hover:scale-95">
               بیشتر
             </button>
           </motion.div>
