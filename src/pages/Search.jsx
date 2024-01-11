@@ -47,12 +47,7 @@ const Search = () => {
           جستجو در مکان های مختلف
         </motion.h1>
 
-        <motion.div
-          initial={{ opacity: 0, y: 200 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1 }}
-          className="w-full"
-        >
+        <motion.div initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1 }} className="w-full">
           <input
             type="text"
             id="search"
@@ -60,17 +55,13 @@ const Search = () => {
             placeholder="دنبال کجا میگردی"
             onChange={(e) => setText(e.target.value)}
             value={text}
-            className="px-6 w-full py-4 rounded-full outline-none border-2 border-neutral-200 focus:border-yellow-600 transition-all"
+            className="px-6 w-full py-4 rounded-full outline-none border-2 border-neutral-200 focus:border-yellow-300 transition-all"
           />
         </motion.div>
 
         <AnimatePresence>
           {results.length > 0 && (
-            <motion.div
-              initial={{ opacity: 0, y: 200 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="flex flex-col gap-y-8 mt-8 w-full"
-            >
+            <motion.div initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} className="flex flex-col gap-y-8 mt-8 w-full">
               {results.map((item, index) =>
                 item.notFound ? (
                   <p key={index}>نتیجه ای یافت نشد</p>

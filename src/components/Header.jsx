@@ -7,87 +7,67 @@ const Header = () => {
       initial={{ opacity: 0, y: -150 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.5 }}
-      className="p-8 bg-yellow-300 hidden lg:flex text-black justify-center backdrop-blur-md z-50"
+      className="p-8 bg-yellow-300 hidden xl:flex text-black justify-center w-full backdrop-blur-md z-50"
     >
-      <ul className="flex items-center gap-x-4">
-        <Link to="/">
-          <motion.div
-            initial={{ opacity: 0, y: -25 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1 }}
-          >
-            <li className="cursor-pointer active:scale-90 hover:bg-yellow-200 hover:text-black transition-all py-2 px-8 rounded-full">
-              رفتن به خانه
-            </li>
+      <div className="flex items-center justify-between w-full gap-x-4">
+        <div className="flex items-center w-full gap-x-4">
+          <Link to="/">
+            <motion.div initial={{ opacity: 0, y: -25 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1 }}>
+              <div className="cursor-pointer active:scale-90 hover:bg-yellow-200 hover:text-black transition-all py-2 px-8 rounded-full">
+                رفتن به خانه
+              </div>
+            </motion.div>
+          </Link>
+
+          <motion.div initial={{ opacity: 0, y: 25 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1 * 1.5 }}>
+            <div className="cursor-pointer active:scale-90 hover:bg-yellow-200 hover:text-black transition-all py-2 px-8 rounded-full">
+              مکان های تاریخی
+            </div>
           </motion.div>
-        </Link>
 
-        <motion.div
-          initial={{ opacity: 0, y: 25 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1 * 1.5 }}
-        >
-          <li className="cursor-pointer active:scale-90 hover:bg-yellow-200 hover:text-black transition-all py-2 px-8 rounded-full">
-            مکان های تاریخی
-          </li>
-        </motion.div>
+          <motion.div initial={{ opacity: 0, y: -25 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1 * 2 }}>
+            <Link to="/game">
+              <div className="cursor-pointer active:scale-90 hover:bg-yellow-200 hover:text-black transition-all py-2 px-8 rounded-full">
+                بازی تاریخ در چالش
+              </div>
+            </Link>
+          </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: -25 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1 * 2 }}
-        >
-          <a
-            target="_blank"
-            href="https://hotelyar.com/city/28/%D9%87%D8%AA%D9%84%D9%87%D8%A7%DB%8C-%D9%87%D9%85%D8%AF%D8%A7%D9%86"
-            rel="noreferrer"
-          >
-            <li className="cursor-pointer active:scale-90 hover:bg-yellow-200 hover:text-black transition-all py-2 px-8 rounded-full">
-              بازی تاریخ در چالش
-            </li>
-          </a>
-        </motion.div>
+          <motion.div initial={{ opacity: 0, y: 25 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1 * 2.5 }}>
+            <a
+              target="_blank"
+              href="https://hotelyar.com/city/28/%D9%87%D8%AA%D9%84%D9%87%D8%A7%DB%8C-%D9%87%D9%85%D8%AF%D8%A7%D9%86"
+              rel="noreferrer"
+            >
+              <div className="cursor-pointer active:scale-90 hover:bg-yellow-200 hover:text-black transition-all py-2 px-8 rounded-full">
+                رزرو هتل
+              </div>
+            </a>
+          </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 25 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1 * 2.5 }}
-        >
-          <a
-            target="_blank"
-            href="https://hotelyar.com/city/28/%D9%87%D8%AA%D9%84%D9%87%D8%A7%DB%8C-%D9%87%D9%85%D8%AF%D8%A7%D9%86"
-            rel="noreferrer"
-          >
-            <li className="cursor-pointer active:scale-90 hover:bg-yellow-200 hover:text-black transition-all py-2 px-8 rounded-full">
-              رزرو هتل
-            </li>
-          </a>
-        </motion.div>
+          <motion.div initial={{ opacity: 0, y: -25 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1 * 3 }}>
+            <Link to="/search">
+              <div className="cursor-pointer active:scale-90 hover:bg-yellow-200 hover:text-black transition-all py-2 px-8 rounded-full">
+                جستجوی مکان ها
+              </div>
+            </Link>
+          </motion.div>
+        </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: -25 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1 * 3 }}
-        >
-          <Link to="/login">
-            <li className="cursor-pointer active:scale-90 bg-yellow-100 transition-all py-2 px-8 rounded-full">
-              ورود
-            </li>
-          </Link>
-        </motion.div>
+        <div className="flex gap-x-4">
+          <motion.div initial={{ opacity: 0, y: 25 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1 * 3.5 }}>
+            <Link to="/login">
+              <div className="cursor-pointer active:scale-90 bg-yellow-100 transition-all py-2 px-8 rounded-full">ورود</div>
+            </Link>
+          </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 25 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1 * 3.5 }}
-        >
-          <Link to="/register">
-            <li className="cursor-pointer active:scale-90 bg-yellow-100 transition-all py-2 px-8 rounded-full">
-              ثبت نام
-            </li>
-          </Link>
-        </motion.div>
-      </ul>
+          <motion.div initial={{ opacity: 0, y: -25 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1 * 4 }}>
+            <Link to="/register">
+              <div className="cursor-pointer active:scale-90 bg-yellow-100 transition-all py-2 px-8 rounded-full whitespace-nowrap">ثبت نام</div>
+            </Link>
+          </motion.div>
+        </div>
+      </div>
     </motion.header>
   );
 };

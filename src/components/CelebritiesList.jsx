@@ -11,7 +11,7 @@ const CelebritiesList = () => {
         exit={{ opacity: 0, y: -100 }}
         className="text-3xl md:text-6xl font-black"
       >
-        مشاهیر همدان کیا هستن
+        برخی از مشاهیر همدان
       </motion.h1>
 
       <div className="w-full max-w-screen-xl mt-16 flex flex-col gap-y-32 mb-32">
