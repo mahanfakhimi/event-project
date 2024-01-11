@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @font-face {
+    font-family: "anjoman";
+    src: url("/fonts/anjoman-regular.woff2");
+    font-weight: 400;
+    font-display: block;
+  }
+
+  @font-face {
+    font-family: "anjoman";
+    src: url("/fonts/anjoman-medium.woff2");
+    font-weight: 500;
+    font-display: block;
+  }
+
+  @font-face {
+    font-family: "anjoman";
+    src: url("/fonts/anjoman-bold.woff2");
+    font-weight: 700;
+    font-display: block;
+  }
+
+  * {
+    -webkit-user-drag: none;
+    user-select: none;
+  }
+
+  body {
+    direction: rtl;
+    @apply bg-neutral-100;
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
