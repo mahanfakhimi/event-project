@@ -7,7 +7,7 @@ const Header = () => {
       initial={{ opacity: 0, y: -150 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.5 }}
-      className="p-8 bg-black/50 text-white m-8 rounded-full flex justify-center backdrop-blur-md sticky top-8 z-50"
+      className="p-8 bg-gradient-to-l from-yellow-600/50 to-amber-800 text-white mx-8 mt-8 rounded-full flex justify-center backdrop-blur-md sticky top-8 z-50"
     >
       <ul className="flex items-center gap-x-8">
         <Link to="/">

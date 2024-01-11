@@ -1,6 +1,5 @@
 import { motion, useScroll } from "framer-motion";
 import CelebritiesList from "../components/CelebritiesList";
-import TourismPlacesList from "../components/TourismPlacesList";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 
@@ -17,7 +16,6 @@ const Home = () => {
       <Header />
       <Hero />
       <CelebritiesList />
-      <TourismPlacesList />
     </div>
   );
 };

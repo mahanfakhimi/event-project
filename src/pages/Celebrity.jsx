@@ -14,7 +14,7 @@ const Peat = () => {
     <div>
       <Header />
 
-      <div className="px-8 flex justify-center flex-col items-start">
+      <div className="px-8 flex justify-center flex-col items-start mt-8">
         <motion.div
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
@@ -27,11 +27,15 @@ const Peat = () => {
           </Link>
         </motion.div>
 
-        <img
-          src={currentPeat.image}
-          alt=""
-          className="w-full h-full fixed inset-0 object-cover blur-md -z-10"
-        />
+        <div className="-z-10">
+          <div className="w-full h-full fixed bg-black/50 inset-0" />
+
+          <img
+            src={currentPeat.image}
+            alt=""
+            className="w-full h-full fixed inset-0 object-cover blur-md -z-10"
+          />
+        </div>
 
         <motion.div
           initial={{ opacity: 0 }}
