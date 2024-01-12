@@ -9,10 +9,7 @@ const Home = () => {
 
   return (
     <div>
-      <motion.div
-        style={{ scaleX: scrollYProgress }}
-        className="bg-yellow-300 h-1 fixed inset-0 origin-left z-10"
-      />
+      <motion.div style={{ scaleX: scrollYProgress }} className="bg-yellow-300 h-1 fixed inset-0 origin-left z-10" />
 
       <HeaderMobile />
       <Header />

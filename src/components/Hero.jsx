@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import inscriptionImg from "../../public/images/_16420ab3-f55d-4d7e-b326-876fcf3af7ae.jpg";
+import inscriptionImg from "/images/_16420ab3-f55d-4d7e-b326-876fcf3af7ae.jpg";
 
 const Hero = () => {
   return (

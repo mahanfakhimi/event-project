@@ -33,8 +33,6 @@ const HeaderMobile = () => {
             <li className="cursor-pointer active:scale-90 hover:bg-white hover:text-black transition-all py-4 px-8 rounded-full">رفتن به خانه</li>
           </Link>
 
-          <li className="cursor-pointer active:scale-90 hover:bg-white hover:text-black transition-all py-4 px-8 rounded-full">مکان های تاریخی</li>
-
           <Link to="/game">
             <li className="cursor-pointer active:scale-90 hover:bg-white hover:text-black transition-all py-4 px-8 rounded-full">
               بازی تاریخ در چالش

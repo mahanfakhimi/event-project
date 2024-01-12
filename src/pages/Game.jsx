@@ -150,9 +150,14 @@ const Game = () => {
                 {currentQuizQuestion.options.map((option, index) => (
                   <motion.div key={index} initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 2 }}>
                     <li
+                      key={index}
                       className={clsx(
-                        "flex items-center gap-x-4 transition-all py-4 px-6 rounded-full bg-neutral-200",
-                        successOptionindex === index ? "bg-green-500" : incorrectOptionindex === index ? "bg-red-500" : "bg-neutral-200",
+                        "flex items-center gap-x-4 transition-all py-4 px-6 rounded-full",
+                        successOptionindex === index
+                          ? "bg-green-500 text-white"
+                          : incorrectOptionindex === index
+                          ? "bg-red-500 text-white"
+                          : "bg-neutral-200",
                         successOptionindex || incorrectOptionindex ? "cursor-not-allowed" : "cursor-pointer hover:opacity-50"
                       )}
                       onClick={() => handleCheckQuestion(option)}

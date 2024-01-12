@@ -19,12 +19,6 @@ const Header = () => {
             </motion.div>
           </Link>
 
-          <motion.div initial={{ opacity: 0, y: 25 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1 * 1.5 }}>
-            <div className="cursor-pointer active:scale-90 hover:bg-yellow-200 hover:text-black transition-all py-2 px-8 rounded-full">
-              مکان های تاریخی
-            </div>
-          </motion.div>
-
           <motion.div initial={{ opacity: 0, y: -25 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1 * 2 }}>
             <Link to="/game">
               <div className="cursor-pointer active:scale-90 hover:bg-yellow-200 hover:text-black transition-all py-2 px-8 rounded-full">
