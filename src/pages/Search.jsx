@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import debounce from "lodash.debounce";
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
+import HeaderMobile from "../components/HeaderMobile";
 import MarkerIcon from "../components/icons/MarkerIcon";
 import API_KEY from "../config/mapApiKey";
 
@@ -36,6 +37,7 @@ const Search = () => {
   return (
     <div>
       <Header />
+      <HeaderMobile />
 
       <div className="w-full px-8 flex flex-col items-center pt-14 pb-8">
         <motion.h1

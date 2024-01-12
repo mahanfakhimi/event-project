@@ -39,10 +39,6 @@ const HeaderMobile = () => {
             </li>
           </Link>
 
-          <a target="_blank" href="https://hotelyar.com/city/28/%D9%87%D8%AA%D9%84%D9%87%D8%A7%DB%8C-%D9%87%D9%85%D8%AF%D8%A7%D9%86" rel="noreferrer">
-            <li className="cursor-pointer active:scale-90 hover:bg-white hover:text-black transition-all py-4 px-8 rounded-full">رزرو هتل</li>
-          </a>
-
           <Link to="/search">
             <div className="cursor-pointer active:scale-90 hover:bg-yellow-200 hover:text-black transition-all py-2 px-8 rounded-full">
               جستجوی مکان ها

@@ -1,11 +1,13 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
+import HeaderMobile from "../components/HeaderMobile";
 
 const Login = () => {
   return (
     <div>
       <Header />
+      <HeaderMobile />
 
       <div className="flex items-center h-screen justify-center">
         <div className="flex flex-col items-center gap-y-10 w-full max-w-[500px] p-8">
